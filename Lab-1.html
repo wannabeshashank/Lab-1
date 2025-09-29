@@ -1,0 +1,147 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        header,
+        nav,
+        section,
+        footer {
+            padding: 20px;
+        }
+
+        nav a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        img {
+            max-width: 150px;
+            border-radius: 50%;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        th,
+        td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #000;
+            color: #fff;
+            padding: 8px;
+            z-index: 100;
+        }
+
+        .skip-link:focus {
+            top: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header>
+        <h1>Shashank Misra</h1>
+        <nav>
+            <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+
+
+        <section id="hero">
+            <h2>Welcome to My Portfolio</h2>
+            <p>Hi, I’m Shashank — I'm a web development student. This is my personal portfolio website.</p>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <img src="C:\Users\de\OneDrive\Desktop\Rishu\Code\Extrazz\My photo.jpg" />
+            <p>I specialize in building user-friendly interfaces with HTML, CSS, and JavaScript. I enjoy solving complex
+                problems and continuously learning new technologies.</p>
+        </section>
+
+        <section id="projects">
+            <h2>My Projects</h2>
+            <ul>
+                <li><strong>Portfolio Website</strong> – A personal one-page website to showcase your bio, skills and
+                    contact details.</li>
+                <li><strong>Medium Clone</strong> – A simple blog layout that looks like Medium, built only with HTML
+                    and CSS.</li>
+                <li><strong>Birthday Card</strong> – A creative greeting card webpage designed with HTML structure and
+                    CSS styling.</li>
+                <li><strong>User Form</strong> - A form webpage with fields like name, email, and message, for
+                    practicing form handling.</li>
+            </ul>
+        </section>
+
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <table border = "2"> 
+                    <tr>
+                        <th>Technology</th>
+                        <th>Level</th>
+                    </tr>
+                    <tr>
+                        <td>HTML</td>
+                        <td>Beginner</td>
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                        <td>Beginner</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>Intermediate</td>
+                    </tr>
+            </table>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label><br />
+                <input type="text" id="name" name="name" placeholder="Your name" required /><br /><br />
+
+                <label for="email">Email:</label><br />
+                <input type="email" id="email" name="email" placeholder="you@example.com" required /><br /><br />
+
+                <label for="message">Message:</label><br />
+                <textarea id="message" name="message" rows="5" placeholder="Your message..."
+                    required></textarea><br /><br />
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
